@@ -1,0 +1,42 @@
+---
+
+import '../styles/style.css';
+
+import { Image } from 'astro:assets';
+import insta from '../assets/insta.png';
+import email from '../assets/email.png';
+
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+	    <link rel="icon" type="image/x-icon" href="../assets/logo.png">
+		<title>nikola woudstra</title>
+	</head>
+	<body>
+
+		<nav>
+			<h2 style="font-size: 1vw; font-family: Arial, Helvetica, sans-serif; font-style: normal; font-weight: 100; color: black;">
+				<a href="/">nikola woudstra</a>
+			</h2>
+        	<!-- <p><a href="/">works</a>   / <a href="/commisioned">commissioned</a> /  <a href="/archive">archive</a>    /   <a href="/about">about</a></p> -->
+        	<p><a href="/">works</a>   / <a href="/commisioned">commissioned</a>    /   <a href="/about">about</a></p>
+    	</nav>
+
+		<slot />
+
+		<footer>
+        	<div class="footer">
+            	<a href="mailto:nikola.woudstra@gmail.com">
+					<Image src={email} width="30" height="30" alt="email" />
+				</a>
+            	<a href="https://instagram.com/nikolawoudstra">
+					<Image src={insta} width="30" height="30" alt="instagram" />
+				</a>
+        	</div>
+    	</footer>
+	</body>
+</html>

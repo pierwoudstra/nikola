@@ -1,0 +1,86 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+import Image from 'astro/components/Image.astro';
+
+import caro from '../assets/caro.jpeg';
+
+import poster1 from '../assets/posters/avantgardekleinLarge.jpeg';
+import poster2 from '../assets/posters/johnsmithkleinLarge.jpeg';
+import poster3 from '../assets/posters/karpokleinLarge.jpeg';
+import poster4 from '../assets/posters/symbols_of_ukraine_kleinLarge.jpeg';
+import poster5 from '../assets/posters/(2026) poster for kriterion, ex-yugo karaoke.png';
+
+import nick1 from '../assets/posters/thesis design and production, nick ouwehand, 2025/voorkant-nick1.png';
+import nick2 from '../assets/posters/thesis design and production, nick ouwehand, 2025/nick4.png';
+import nick3 from '../assets/posters/thesis design and production, nick ouwehand, 2025/nick2.png';
+
+import nynne from '../assets/posters/thesis design and production, nynne pors, 2026/voorkant- nynne4.png';
+---
+
+<Layout>
+    <style>
+
+        .posters {
+            /* margin-top: 20vh; */
+            padding: 10vw;
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+        .posters img {
+            min-width: 0%;
+            width: 100%;
+            height: auto; /* Overrides Astro's generated HTML height attribute */
+            object-fit: cover;
+            vertical-align: bottom;
+        }
+
+        .posters div {
+            padding: 2vw;
+        }
+
+
+            
+    </style>
+    
+        <div class="posters">
+            <div>
+                <a href="/nynnethesis">thesis design and production, nynne pors, 2026</a>
+                <a href="/nynnethesis"><Image src={nynne} alt="thesis design" /></a>
+            </div>
+            <div>
+                <a href="/nickthesis">thesis design and production, nick ouwehand, 2025</a>
+                <a href="/nickthesis"><Image src={nick1} alt="thesis design" / ></a>
+            </div>
+            <div>
+                <a>weaving support, Caro de Valk (2026)</a>
+                <Image src={caro} alt="commissioned work" />
+            </div>
+            <div>
+                <a>(2026) poster for kriterion, symbols of ukraine</a>
+                <Image src={poster4} alt="symbols of ukraine"></Image>
+            </div>
+            <div>
+                <a>(2026) poster for kriterion, ex-yugo karaoke</a>
+                <Image src={poster5} alt="ex yugo karaoke"></Image>
+            </div>
+            <div>
+                <a>(2024) poster for kriterion, karpo godina retrospective</a>
+                <Image src={poster3} alt="karpo"></Image>
+            </div>
+            <div>
+                <a>(2023)poster for kriterion, avant garde</a>
+                <Image src={poster1} alt="avant garde"></Image>
+            </div>
+            <div>
+                <a>(2023) poster for kriterion, john smith retrospective</a>
+                <Image src={poster2} alt="john smith"></Image>
+            </div>
+
+            
+        </div>
+
+
+
+</Layout>

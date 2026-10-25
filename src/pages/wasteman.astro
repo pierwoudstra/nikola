@@ -1,0 +1,26 @@
+---
+
+import Layout from '../layouts/Layout.astro';
+
+import wasteman from '../assets/wasteman/IMG_6385.jpg';
+import wasteman2 from '../assets/wasteman/IMG_6217.jpg';
+import wasteman3 from '../assets/wasteman/15BDE108-8AFD-42E6-BB4F-179C2E3E8FA2.jpg';
+import tekst from '../assets/wasteman/wastemanandgarbage.pdf';
+
+import Image from 'astro/components/Image.astro';
+---
+
+<Layout>
+
+    <div class="neverending">
+        <embed src={tekst} width="100%" height="600px" type="application/pdf">
+        <Image src={wasteman} alt="wasteman"/>
+        <Image src={wasteman2} alt="wasteman2"/>
+        <Image src={wasteman3} alt="wasteman3"/>
+        <br>
+        <br>
+        <br>
+    </div>
+
+
+</Layout>

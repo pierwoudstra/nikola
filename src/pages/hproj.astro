@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+import image1 from '../assets/weather1.jpg';
+import image2 from '../assets/weather2.jpg';
+import image3 from '../assets/weather3.jpg';
+import Image from 'astro/components/Image.astro';
+---
+
+<Layout>
+<section class="projects">
+        <div class="column-1"> 
+            <div class="a-container">
+                <Image src={image1} alt="a" />
+            </div>
+
+            <h5>an installation in combination with a book. the book is an archive of objects found at Radićeva 14, Karlovac, Croatia, together with translations. the objects are permutations of my memory of the space.</h5>
+
+        </div>
+
+        <div class="column-2">
+            <div class="a-container">
+                <Image src={image2} alt="a" />
+            </div>
+            <div class="a-container">
+                <Image src={image3} alt="a" />
+            </div>
+
+        </div>
+
+    </section>
+</Layout>

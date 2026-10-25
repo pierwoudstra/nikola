@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+import image1 from '../assets/mensen2.jpg';
+import image2 from '../assets/mijn-vader.jpg';
+import image3 from '../assets/mijn-moeder.jpg';
+import image4 from '../assets/mensen1.jpg';
+import image5 from '../assets/mensen3.jpg';
+import image6 from '../assets/mijn-broertje.jpg';
+import image7 from '../assets/iris.jpg';
+import Image from 'astro/components/Image.astro';
+---
+
+<Layout>
+<section class="projects">
+        <div class="column-1">
+
+            <h5>‘other people’s lives’ was a performance of a 2.5 week duration with additional documentation. the premise of the project was to emulate change through trying to literally become the people around me. I wore their clothes and did their activities. this period culminated in photographs of me as others, new clothing articles, an instruction book (which I also followed) and a video.</h5>
+
+            <div class="a-container">
+                <Image src={image1} alt="a" />
+                <Image src={image2} alt="a" />
+                <Image src={image3} alt="a" />
+                <iframe title="vimeo-player" src="https://player.vimeo.com/video/303479128?h=01ebb7c967" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+        <div class="column-2">
+
+            <div class="a-container">
+                <Image src={image4} alt="a" />
+            </div>
+            <div class="a-container">
+                <Image src={image5} alt="a" />
+                <Image src={image6} alt="a" />
+                <Image src={image7} alt="a" />
+            </div>
+
+        </div>
+
+    </section>
+</Layout>

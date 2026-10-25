@@ -1,0 +1,38 @@
+---
+import Layout from '../layouts/Layout.astro';
+import image1 from '../assets/point4.jpg';
+import image2 from '../assets/point1.jpg';
+import image3 from '../assets/point2.jpg';
+import image4 from '../assets/point3.jpg';
+import image5 from '../assets/point5.jpg';
+import Image from 'astro/components/Image.astro';
+---
+
+<Layout>
+<section class="projects">
+        <div class="column-1"> 
+            <div class="a-container">
+                <Image src={image1} alt="a" />
+            </div>
+            <div class="a-container">
+                <Image src={image2} alt="a" />
+            </div>
+            <div class="a-container">
+                <Image src={image3} alt="a" />
+            </div>
+        </div>
+
+        <div class="column-2">
+            <div class="a-container">
+                <Image src={image4} alt="a" />
+            </div>
+            <div class="a-container">
+                <Image src={image5} alt="a" />
+            </div>
+
+            <h5>in this project, pictures were reproduced by hand on light sensitive film for a 35 mm camera. the work was precise, and a lot of information was lost from the original pictures, which resulted in almost abstract images. the process of compressing was countered by additional enlarging: reproducing them once more by hand on big sheets of textile. these works were exhibited in a large installation, posing the question; what remains?</h5>
+
+        </div>
+
+    </section>
+</Layout>

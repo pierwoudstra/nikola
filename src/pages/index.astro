@@ -1,0 +1,100 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+import warpinginspace from '../assets/warpinginspace/voorkant-bouwput.jpg';
+import singingloom from '../assets/thesingingloom2026/IMG_6700.jpeg';
+import smallframed from '../assets/smallframed2025-26/smallhanging2.png';
+import wasteman from '../assets/wasteman.jpg';
+import mountains from '../assets/mountains/IMG_1153.jpg';
+import imageA from '../assets/a.jpeg';
+import imageB from '../assets/b.jpg';
+import imageC from '../assets/c.jpg';
+import imageD from '../assets/d.jpeg';
+import imageE from '../assets/e.jpg';
+import imageF from '../assets/f.jpeg';
+import imageG from '../assets/g.jpg';
+import imageH from '../assets/h.jpg';
+import imageI from '../assets/i.jpeg';
+import imageJ from '../assets/j.jpeg';
+import imageK from '../assets/k.jpg';
+import imageL from '../assets/l.jpg';
+import Image from 'astro/components/Image.astro';
+---
+
+<Layout>
+    <section class="projects">
+        <div class="column-1">
+            <div>
+                <a class="a" href="/warpinginspace">warping in space, 2 (2026) ↓</a>
+                <a href="/warpinginspace"><Image src={warpinginspace} alt="warping in space" /></a>
+            </div>
+            <div>
+                <a class="a" href="/smallframed">small framed (2025-26) ↓</a>
+                <a href="/smallframed"><Image src={smallframed} alt="small framed" /></a>
+            </div>
+            <div>
+               <a class="a" href="/mountains">the space between the mountains (2023) ↓</a>
+               <a href="/mountains"><Image src={mountains} alt="the space between the mountains" /></a>
+            </div> 
+            <div class="a-container">
+                <a class="a" href="/aproj">a neverending conversation in a room that is actually not a room but a busy cafe (2021) ↓</a>
+                <a href="/aproj"><Image src={imageA} alt="a neverending conversation" /></a>
+            </div>
+            <div class="c-container">
+                <a class="c" href="/cproj">flag project (2021) ↓</a>
+                <a href="/cproj"><Image src={imageC} alt="flag project" /></a>
+            </div>
+            <div class="d-container">
+                <a class="d" href="/dproj">from the place beneath my feet (2020) ↓</a>
+                <a href="/dproj"><Image src={imageD} alt="from the place beneath my feet" /></a>
+            </div>
+            <div class="e-container">
+                <a class="e" href="/eproj">tea towels (2021) ↓</a>
+                <a href="/eproj"><Image src={imageE} alt="tea towels" /></a>
+            </div>
+            <div class="f-container">
+                <a class="f" href="/fproj">lace and small weavings (2020) ↓</a>
+                <a href="/fproj"><Image src={imageF} alt="lace and small weavings" /></a>
+            </div>
+        </div>
+
+        <div class="column-2">
+            <div>
+                <a class="a" href="/singingloom">the singing loom (2026) ↓</a>
+                <a href="/singingloom"><Image src={singingloom} alt="the singing loom"/></a>
+            </div>
+            <div>
+                <a class="a" href="/wasteman">wasteman and garbageperson (2022) ↓</a>
+                <a href="/wasteman"><Image src={wasteman} alt="wasteman and garbageperson"/></a>
+            </div>
+            <div class="b-container">
+                <a class="b" href="/bproj">n for nikola (2021) ↓</a>
+                <a href="/bproj"><Image src={imageB} alt="n for nikola" /></a>
+            </div>
+            <div class="g-container">
+                <a class="g" href="/gproj">containers (2021) ↓</a>
+                <a href="/gproj"><Image src={imageG} alt="containers" /></a>
+            </div>
+            <div class="h-container">
+                <a class="h" href="/hproj">the weather is nice (2021) ↓</a>
+                <a href="/hproj"><Image src={imageH} alt="the weather is nice" /></a>
+            </div>
+            <div class="i-container">
+                <a class="i" href="/iproj">conversations inside my head (2020) ↓</a>
+                <a href="/iproj"><Image src={imageI} alt="conversations inside my head" /></a>
+            </div>
+            <div class="j-container">
+                <a class="j" href="/jproj">perfectly bound (2020) ↓</a>
+                <a href="/jproj"><Image src={imageJ} alt="perfectly bound" /></a>
+            </div>
+            <div class="l-container">
+                <a class="l" href="/lproj">other people’s lives (2018) ↓</a>
+                <a href="/lproj"><Image src={imageL} alt="other people’s lives" /></a>
+            </div> 
+            <div class="k-container">
+                <a class="k" href="/kproj">new pointilism (2018) ↓</a>
+                <a href="/kproj"><Image src={imageK} alt="new pointilism" /></a>
+            </div>
+        </div>
+    </section>
+</Layout>
